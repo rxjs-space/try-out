@@ -6,9 +6,8 @@ import { ActivatedRoute, RouterOutletMap } from '@angular/router';
   styleUrls: ['./about.component.css']
 })
 export class AboutDetailComponent implements OnInit {
-
-  constructor(private route: ActivatedRoute, om: RouterOutletMap) {
-    console.log(om);
+  go: boolean = true;
+  constructor() {
   }
 
   ngOnInit() {

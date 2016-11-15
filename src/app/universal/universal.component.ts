@@ -8,8 +8,7 @@ import { ActivatedRoute, RouterOutletMap } from '@angular/router';
 })
 export class UniversalComponent {
   title = 'universal works!';
-  constructor(private route: ActivatedRoute, om: RouterOutletMap) {
-    console.log(om);
+  constructor() {
   }
   
 }

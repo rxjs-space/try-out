@@ -1,13 +1,15 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import { AboutDetailComponent } from './about-detail.component';
+import { AboutComponent } from './about.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: AboutComponent,
     children: [
-      {path: '', pathMatch: 'full', redirectTo: 'aboutd'},
-      {path: 'aboutd', pathMatch: 'full', component: AboutDetailComponent},
+      {path: '', pathMatch: 'full', redirectTo: 'detail'},
+      {path: 'detail', pathMatch: 'full', component: AboutDetailComponent},
     ]
   },
 ];
